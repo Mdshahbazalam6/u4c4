@@ -113,14 +113,14 @@
         table.append(tr)
     });
     const store=(ele)=>{
-        let contactList = localStorage.getItem("Favourites")
+        let contactList = localStorage.getItem("favourites")
         if (contactList === null) {
-            localStorage.setItem("Favourites", "[]")
+            localStorage.setItem("favourites", "[]")
         }
-        var arr = JSON.parse(localStorage.getItem("Favourites"))
+        var arr = JSON.parse(localStorage.getItem("favourites"))
         arr.push(ele)
         // console.log(arr)
-        localStorage.setItem("Favourites", JSON.stringify(arr))
+        localStorage.setItem("favourites", JSON.stringify(arr))
         alert(`Added to Favourites`)
     }
 </script>
